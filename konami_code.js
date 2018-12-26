@@ -5,13 +5,11 @@ function init() {
   document.body.addEventListener('keydown', function(e) {
     const key = parseInt(e.detail || e.which);
 
-    if (code[index] === key) {
-      index++;
+    if (key === code[index]) {
+      index+=1;
 
     if (index === code.length) {
-      alert('Congrats!');
-
-    index = 0;
+      alert('Hurray!');
     }
   } else {
     index = 0;
